@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+  	overflow-Y: hidden;
+}
+
+.container {
+	position: absolute;
+	top: 0;
+	background:-webkit-linear-gradient(top, rgba(94,14,110,1) 0%, rgb(247,47,150) 42%, rgb(247,47,150) 65%, rgb(112,28,122) 100%);
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+}
+
+.logo {
+    margin-top: 60%;
+    margin-left: 10%;
+    height: 50rem;
+}
+
+.cerrar {
+	transform: translateY(-100%);
+	transition: all 0.5s;
+}
+
