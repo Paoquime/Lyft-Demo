@@ -9,4 +9,6 @@ servicio.**
   
     ![Sin titulo](http://i68.tinypic.com/21dely1.jpg)
     
-  + 
+  + La creaciòn de la portada de la aplicaciòn donde se mostrara el boton para usuarios registrados y el de Sign up para los nuevos.
+
+    ![Sin titulo](http://i63.tinypic.com/zboma.jpg)
