@@ -10,7 +10,7 @@
 		<title>Lyft</title>
 	</head>
 	<body>
-		<header class="headerMap">
+		<header class="headerMap" id="map-canvas">
 			<div class="col-4">
 				<i class="fa fa-user-circle-o iconUsuario"><a href="perfil.html"></a></i>
 			</div>
@@ -29,7 +29,12 @@
 				<a>Set Pickup</a>
 			</div>
 		</section>
+		<div id="map"></div>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGniJjYvDPA8eGaAgIeD6PH24q6L_rLvY&signed_in=true&callback=initMap"
+        async defer>
+    </script>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src= "js/main.js"></script>
+	<script type="text/javascript" src= "js/map.js"></script>
 	</body>
 </html>
