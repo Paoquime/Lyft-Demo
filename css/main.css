@@ -1,3 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100%;
+    position: relative;
+}
+
+
 body {
 	margin: 0;
 	font-family: sans-serif;
@@ -114,7 +126,7 @@ body {
 }
 
 .bordeDatos {
-    display: inline-flex;
+    display: inline-block;
     border: solid 1px #ccc;
     padding: 1.2%;
 }
@@ -155,9 +167,10 @@ body {
 }
 
 .direccionUsuario {
-    top: 75%;
     left: 2%;
-    position: fixed;
+    position: absolute;
+    top: 78%;
+    z-index: 200;
 }
 
 .bordeDireccion {
@@ -178,3 +191,4 @@ body {
 ::-webkit-input-placeholder {
    font: 1.3em verdana, sans-serif;
 }
+

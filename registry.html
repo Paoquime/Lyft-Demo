@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 		<link rel="stylesheet" type="text/css" href="css/simplegrid.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="shortcut icon" href="favicon.ico">
@@ -17,34 +18,35 @@
 			<div class="lineaDivisora col-12"></div>
 		</div>
 		<section class="ingresoDatos">
-			<div class="container bordeDatos">
-				<div class="col-2">
+			<form class="container bordeDatos" id="formRegistry">
+				<div class="col-2 inputFormR">
 					<i class="fa fa-user-circle"></i>
 				</div>
-				<div class="col-5">
-					<input type="text" placeholder="First name">
+				<div class="col-5 inputFormR">
+					<input type="text" name="firstName" placeholder="First name">
 				</div>
-				<div class="col-5">
-					<input type="text" placeholder="Last name">
+				<div class="col-5 inputFormR">
+					<input type="text" name="lastName" placeholder="Last name">
 				</div>
 			</div>
-			<div class="container bordeEmail bordeDatos">
+			<div class="container bordeEmail bordeDatos formRegistry">
 				<div class="col-2">
 					<i class="fa fa-envelope-o iconEmail"></i>
 				</div>
-				<div class="col-10">
-					<input type="email" placeholder="Email">
+				<div class="col-10 inputFormR">
+					<input type="text" name="email" placeholder="Email">
 				</div>
-			</div>
+			</form>
 		</section>
-		<div class="container areaTerminos">
-			<p><input type="checkbox"> I agree to Lyft <a class="aTerminos" href="#">Terms of Service</a></p>
-		</div>
+		<form class="container areaTerminos inputFormR">
+			<p><input type="checkbox" value="agree" name="agree"> I agree to Lyft <a class="aTerminos" href="#">Terms of Service</a></p>
+		</form>
 		<footer class="col-12 nextF">
-			<a href="map.html" class="textNextF">Next</a>
+			<a href="map.html" class="textNextF" id="nextPageMap">Next</a>
 		</footer>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
 	<script type="text/javascript" src= "js/main.js"></script>
 	</body>
 </html>
